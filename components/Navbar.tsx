@@ -10,7 +10,15 @@ const Navbar = () => {
 
   const [open, setOpen] = useState(false)
   return (
-    <nav className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <nav className="h-24 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 z-1">
+      {/* Implementing the logo */}
+      <div className='left-0'>
+        <Link href="/">
+          <Image src="/predictifylogo.png" alt="logo" 
+          width={74} height={29}/>
+        </Link>  
+      </div>
+
       <div className='hidden md:flex gap-4'>
         {NAV_LINKS.map((link) => (
             <Link href={link.href} key={link.key} className="regular-16 text-black-50 
@@ -18,14 +26,6 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-      </div>
-
-      {/* Implementing the logo */}
-      <div className='md:hidden'>
-        <Link href="/">
-          <Image src="/predictifylogo.png" alt="logo" 
-          width={74} height={29}/>
-        </Link>  
       </div>
 
       {/* Implementing the responsive menu */}

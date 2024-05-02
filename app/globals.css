@@ -2,6 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+  font-size: 60px;
+  font-family: Manrope;
+  font-weight: 700;
+  color:rgb(53, 53, 53);
+  filter: drop-shadow(-3px 3px 3px #646464a6);
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Manrope;
+  font-weight: 200;
+  color:rgb(53, 53, 53);
+  filter: drop-shadow(-3px 3px 3px #646464a6);
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Manrope;
+  font-weight: 700;
+  color:rgb(53, 53, 53);
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Manrope;
+  font-weight: 100;
+  color:rgb(53, 53, 53);
+}
+
+.hero-image {
+  filter: drop-shadow(-20px 20px 6px #a3a3a393);
+}
+
+.info-box {
+  border-radius: 20px 0px 20px 0px;
+  background: #ffffff;
+  padding: 20px; 
+
+  min-width: 200px;
+  max-width: 500px;
+  width: 500px;
+
+  min-height: 100px;
+  max-height: 600px;
+  height: auto;
+
+  margin: 50px 50px;
+
+  filter: drop-shadow(-5px 5px 4px #a3a3a369);
+  background-image: linear-gradient(to bottom right, rgb(245, 237, 220), rgba(228, 233, 255, 0.24));
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
@@ -15,6 +69,49 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/light.ttf');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/regular.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/medium.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/semibold.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/Manrope/bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));

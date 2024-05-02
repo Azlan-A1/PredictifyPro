@@ -6,81 +6,26 @@ export const NAV_LINKS = [
     { href: '/', key: 'learning centre ', label: 'Learning Centre' },
     { href: '/', key: 'contact_us', label: 'Contact Us' },
   ];
-  
-  // CAMP SECTION
-  export const PEOPLE_URL = [
-    '/person-1.png',
-    '/person-2.png',
-    '/person-3.png',
-    '/person-4.png',
+
+  // HOME PAGE
+  export const HOME = [{
+      title: 'Input your location, discover what it\'s worth in time.',
+      subtitle: 'Understand the worth of your property using generative AI.',
+
+      infotitle1: 'Real-Time Market Insights',
+      infotitle2: 'Advanced Predictive Analytics',
+      infotitle3: 'Customizable Region-Specific Models',
+      infotitle4: 'User-Friendly Interface',
+      infotitle5: 'Comprehensive Data Integration',
+      infotitle6: 'One-on-one Support',
+
+      infoblurb1: 'Access up-to-the-minute data on housing market trends, enabling you to make timely and informed decisions in the ever-changing real estate landscape.',
+      infoblurb2: 'Utilize sophisticated machine learning algorithms to forecast future house prices with high accuracy, providing you a competitive edge in real estate planning and investments.',
+      infoblurb3: 'Tailor the predictive models to focus on specific regions, cities, or neighborhoods, ensuring that you receive relevant and precise market predictions.',
+      infoblurb4: 'Experience an intuitive and easy-to-navigate platform, making advanced data analysis accessible to both real estate professionals and enthusiasts without a technical background.',
+      infoblurb5: 'Seamlessly integrate your existing data sources with Predictify Pro for a unified analysis experience, enhancing the precision of your market predictions.',
+      infoblurb6: 'Gain access to expert support and training resources, ensuring you can fully leverage the app\'s capabilities and maximize your real estate market potential.',
+    }
   ];
   
-  // FEATURES SECTION
-  export const FEATURES = [
-    {
-      title: 'Real maps can be offline',
-      icon: '/map.svg',
-      variant: 'green',
-      description:
-        'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
-    },
-    {
-      title: 'Set an adventure schedule',
-      icon: '/calendar.svg',
-      variant: 'green',
-      description:
-        "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
-    },
-    {
-      title: 'Technology using augment reality',
-      icon: '/tech.svg',
-      variant: 'green',
-      description:
-        'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
-    },
-    {
-      title: 'Many new locations every month',
-      icon: '/location.svg',
-      variant: 'orange',
-      description:
-        'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
-    },
-  ];
   
-  // FOOTER SECTION
-  export const FOOTER_LINKS = [
-    {
-      title: 'Learn More',
-      links: [
-        'About Hilink',
-        'Press Releases',
-        'Environment',
-        'Jobs',
-        'Privacy Policy',
-        'Contact Us',
-      ],
-    },
-    {
-      title: 'Our Community',
-      links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
-    },
-  ];
-  
-  export const FOOTER_CONTACT_INFO = {
-    title: 'Contact Us',
-    links: [
-      { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
-    ],
-  };
-  
-  export const SOCIALS = {
-    title: 'Social',
-    links: [
-      '/facebook.svg',
-      '/instagram.svg',
-      '/twitter.svg',
-      '/youtube.svg',
-      '/wordpress.svg',
-    ],
-  };

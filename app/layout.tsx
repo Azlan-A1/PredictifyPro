@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Predictify Pro.",
@@ -15,13 +16,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100">
-          <div className="h-24">
-            <Navbar />
-          </div>
-          <div className="h-[calc(100vh - 6rem)]">{children}</div>
+      <head>
+        <link rel="stylesheet" type="text/css" href="global.css"></link>
+      </head>
+      
+      <body className="w-screen overflow-x-hidden" >
+
+        <div className="sticky top-0 bottom-0 z-1" style={{zIndex:1}}>
+          <Navbar />
         </div>
+        <div style={{translate: '0px -95px'}}>
+          <Hero />
+        </div>
+
+        <div className="h-[calc(100vh - 6rem)]">{children}</div>
       </body>
     </html>
   );

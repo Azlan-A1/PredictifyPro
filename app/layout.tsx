@@ -16,11 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main className="relative overflow-hidden">
-          {children}
-        </main>
-        </body>
+        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100">
+          <div className="h-24">
+            <Navbar />
+          </div>
+          <div className="h-[calc(100vh - 6rem)]">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

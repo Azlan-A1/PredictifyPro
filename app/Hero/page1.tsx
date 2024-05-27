@@ -5,8 +5,8 @@ import Image from 'next/image'
 import { HERO } from '@/constants'
 import '/app/Hero/Hero.css'
 import { useState } from 'react'
-import Layout from '../../components/FAQ/Layout'
-import data from '../../components/FAQ/data.json'
+import Layout from '../../components/faq/Layout'
+import data from '../../components/faq/data.json'
 
 const Hero = () => {
   const [active, setActive] = useState([false, false, false, false, false, false, false, false, false, false]);

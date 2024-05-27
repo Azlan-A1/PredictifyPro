@@ -1,0 +1,22 @@
+{
+    "packages": [
+        {
+            "id": 1,
+            "name": "Basic Package",
+            "price": 1000,
+            "quantity": 1,
+            "features": [
+
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Advanced Package",
+            "price": 3500,
+            "quantity": 1,
+            "features": [
+
+            ]
+        }
+    ]
+}

@@ -1,3 +1,5 @@
+import submitHandler from "../Payment/public/paymentScript";
+
 interface PlanCardProps {
     name: string;
     description: string;
@@ -50,6 +52,6 @@ export default function PlanCard({
             ))}
             </ul>
             <button className="mt-auto rounded-xl bg-black py03 px-6 text-lg font-medium
-             text-white">{btnText}</button>
+             text-white" onClick={() => submitHandler(1)}>{btnText}</button>
     </div>
 }

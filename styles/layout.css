@@ -1,0 +1,15 @@
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  img.minus {
+    filter: invert(100%);
+}
+
+.a_padding-global-layout{
+  padding-left: 30.5rem;
+  padding-right: 30.5rem;
+  padding-top: 5rem;
+}

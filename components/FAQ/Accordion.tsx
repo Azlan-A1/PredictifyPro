@@ -1,10 +1,8 @@
 import Image from 'next/image'
 import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
-import minus from "./minus.svg";
-import plus from "./plus.svg";
-import '/app/globals.css'
+import { minus, plus } from '@/assets/images'
+import '@/styles/globals.css'
 
-'./components/FAQ/Layout'
 type Props = {
     question: string,
     answer: string,

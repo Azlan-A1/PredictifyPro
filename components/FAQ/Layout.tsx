@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import React, { Dispatch, SetStateAction } from 'react'
-import down from "./down.svg";
-import Accordion from './Accordion';
-import './Layout.css'
-import '/app/globals.css'
+import Accordion from './Accordion'
+import '@/styles/layout.css'
+import '@/styles/globals.css'
 
 type Props = {
     question :string,

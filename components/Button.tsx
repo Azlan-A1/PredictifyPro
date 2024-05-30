@@ -1,10 +1,18 @@
-import React from 'react'
-import { button_Links } from '@/constants'
+// Button.jsx or Button.tsx
+import React from 'react';
 
-const Button = () => {
-  return (
-    <button type='button'>Login</button>
-  )
+interface ButtonProps {
+  children: React.ReactNode;
+  variant?: string; // Add the variant prop
+  onClick?: () => void; // If your button handles click events
 }
 
-export default Button
+const Button: React.FC<ButtonProps> = ({ children, variant, onClick }) => {
+  return (
+    <button onClick={onClick} className={`your-button-class ${variant}`}>
+      {children}
+    </button>
+  );
+};
+
+export default Button;
